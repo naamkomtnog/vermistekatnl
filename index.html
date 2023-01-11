@@ -32,6 +32,23 @@
 		iframe {
 			margin-top:20px;
 		}
+		.kenmerkenimage {
+			height:auto;
+			width:auto;
+			max-width:100%;
+			max-height:600px;
+							object-fit: contain;
+
+		}
+		@media (max-width:600px) {
+			.flex {
+				gap:10px;
+			}
+			.kenmerken {
+				flex-direction:column;
+			}
+
+		}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
@@ -42,8 +59,8 @@
 		<li>Vertel over onze zoekactie aan je buren en vrienden</li>
 		<li>Deel deze website</li>
 	</ul>
-	<div class="flex">
-	<img src="aurora.jpg" style="max-width:100%;max-height:600px;"/>
+	<div class="flex kenmerken">
+	<img src="aurora.jpg" class="kenmerkenimage"/>
 	<div>
 <h2>Kenmerken</h2>
 <ul>
