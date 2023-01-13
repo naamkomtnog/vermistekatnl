@@ -10,10 +10,10 @@
 			overflow-x:hidden; 
 		}
 		h1 {
-			margin-top:120px;
+			margin-top:50px;
 			display:block;
 			line-height:120%; 
-			color:#F03700;
+			color:#C40000;
 			font-size:30px;
 		}
 		h1 span {
@@ -46,7 +46,7 @@
 		.bottomcontact {
 			display:flex;
 			gap:10px;
-			margin-bottom:300px;
+			margin-bottom:40px;
 			margin-top:30px;
 		}
 		.top {
@@ -94,6 +94,18 @@
 						justify-content: flex-end;
 			align-items:center;
 		}
+
+		.photos {
+			width:100%;
+			margin-top:70px;
+			gap:0;
+			display:grid;
+			grid-template-columns: 25% 25% 25% 25%;
+			overflow:hidden;
+		}
+		.photos img {
+			width:100%;
+		}
 		.top p {
 			font-weight:700;
 			line-height:120%;
@@ -112,6 +124,14 @@
 
 		}
 		@media (max-width:600px) {
+			.photos {
+				grid-template-columns: 50% 50%;
+				gap:0 !important;
+
+			}
+			.photos img:nth-child(3), .photos img:nth-child(4) {
+				display:none;
+			}
 					h1 {
 			font-size:25px;
 		}
@@ -156,6 +176,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+	<div class="flex photos">
+		<img src="1.jpg"/>
+		<img src="2.jpg"/>
+		<img src="3.jpg"/>
+		<img src="4.jpg"/>
+	</div>
 	<h1>Help zoeken naar Aurora in Kattenbroek <span>(Amersfoort)</span></h1>
 	<h2>Wat kan ik doen?</h2>
 	<ul>
@@ -199,7 +225,10 @@
 <a class="whatsapp" target="_blank" href="https://wa.me/31617036354">Whatsapp</a>
 	<a class="email" href="mailto:tswnhs@gmail.com?subject=Vermiste kat in Kattenbroek">E-mail</a>
 	<a class="bellen" href="tel:0031617036354">Bellen</a>
+
 </div>
+		<p style="margin-bottom:100px;">Winnende tip krijgt € 50 en eeuwige dankbaarheid.</p>
+
 
 <div class="top">
 	<div class="inner flex">
@@ -209,5 +238,11 @@
 	<a class="bellen" href="tel:0031617036354">Bellen</a>
 </div>
 </div>
+	<div class="flex photos">
+		<img src="5.jpg"/>
+		<img src="6.jpg"/>
+		<img src="7.jpg"/>
+		<img src="8.jpg"/>
+	</div>
 
 </body>
